@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card img {
+    height: 250px;
+    transition: all 1.5s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+/* .inner {
+    overflow: hidden;
+} */
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+

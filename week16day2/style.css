@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: red;
+    height: 40px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+}
+main {
+    background-color: aqua;
+    height: 1500px;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: brown;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.some {
+    border: 1px solid black;
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+    background-color: yellow;
+}

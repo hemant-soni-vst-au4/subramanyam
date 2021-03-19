@@ -1,0 +1,34 @@
+.btn {
+  padding: 7px;
+  margin: 1px;
+  border: 0.3px rgb(218, 208, 208) solid;
+  border-radius: 6px;
+}
+.default {
+  background-color: white;
+}
+.success {
+  background-color: rgb(49, 146, 49);
+  color: white;
+  margin-right: 10px;
+}
+
+.primary {
+  background-color: rgb(21, 45, 180);
+  color: white;
+}
+
+.info {
+  background-color: skyblue;
+  color: white;
+}
+
+.warning {
+  background-color: rgb(151, 127, 95);
+  color: white;
+}
+
+.danger {
+  background-color: rgb(197, 41, 41);
+  color: white;
+}

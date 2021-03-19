@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-main {
+    display: flex;
+    /* margin: 10px 0px 10px 0px; */
+    
+}
+.flex-header {
+    height: 100px;
+    background-color: blue;    
+}
+
+.flex-nav {
+    height: 500px;
+    background-color: brown;
+    flex: 0 0 200px;
+}
+
+.flex-article {
+    height: 500px;
+    background-color: skyblue;
+    flex: 1 0 600px;
+}
+
+.flex-aside {
+    height: 500px;
+    background-color:black;
+    flex: 0 0 200px;
+}
+
+.flex-footer {
+    height: 100px;
+    background-color: green;
+}

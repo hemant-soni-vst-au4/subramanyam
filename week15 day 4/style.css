@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 0.5px rgb(47, 60, 119) solid;
+    border-radius: 15px;
+    box-shadow: 2px 4px 3px rgb(47, 60, 119);
+    height: 300px;
+    width: 550px;
+    margin: 70px 100px 100px 400px;
+    background-color: aqua;
+}
+
+img {
+    border-radius: 50%;
+    width: 94px;
+    height: 83px;    
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(47, 60, 119);
+}
+
+.info {
+    border: 0.5px black solid;
+    border-radius: 15px;
+    padding: 0 20px 20px 20px;
+    background-color: rgb(47, 60, 119);
+    color: white;
+    box-shadow: 2px 2px 3px #292929;
+}
