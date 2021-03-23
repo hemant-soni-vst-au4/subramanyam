@@ -5,22 +5,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container shadow">
+    <div class="container shadow p-5">
+        <h1 class="text-center">Stack Emulator</h1>
         <div class="form-group m-4 ">
-          <label for="number1">Number 1</label>
+          <label for="stack">The Number you want to add in stack</label>
           <input type="text"
-            class="form-control" name="number1" id="number1" aria-describedby="helpId" placeholder="Enter number one">
-            <label for="number2" class="mt-2">Number 2</label>
-            <input type="text"
-              class="form-control " name="number2" id="number2" aria-describedby="helpId" placeholder="Enter number two">
-           <button type="button" class="btn btn-primary mt-2" id="sum">Submit</button>
+            class="form-control" name="stack" id="stack" aria-describedby="helpId" placeholder="Enter the number">
+           <button type="button" class="btn btn-primary mt-2" id="push">Push</button>
+           <button type="button" class="btn btn-danger mt-2" id="pop">Pop</button>
         </div>
         <h3 id="output" class="text-primary m-4"></h3>
+        </div>
+
+        <script src="index.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
