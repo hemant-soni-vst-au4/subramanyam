@@ -1,0 +1,6 @@
+.container {
+    width: 450px !important;
+    border: 2px solid paleturquoise;
+    border-radius: 10px;
+    margin-top: 80px;
+}

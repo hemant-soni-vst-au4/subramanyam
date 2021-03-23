@@ -2,6 +2,7 @@ function geoFindMe() {
 
     const status = document.querySelector('#status');
     const mapLink = document.querySelector('#map-link');
+    const loc = document.querySelector('#location');
   
     mapLink.href = '';
     mapLink.textContent = '';
@@ -11,8 +12,10 @@ function geoFindMe() {
       const longitude = position.coords.longitude;
   
       status.textContent = '';
-      mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+      mapLink.href = `https://www.google.co.in/maps/@${latitude},${longitude}`;
+      mapLink.className = "btn btn-danger"
+      mapLink.innerHTML = "View on google map";
+      loc.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
     }
   
     function error() {
