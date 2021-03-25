@@ -1,0 +1,26 @@
+.item{
+    height: 150px;
+    border-radius: 5px;
+}
+
+#item1 {
+    background-color: hotpink;
+}
+
+#item2 {
+    background-color: blue;
+}
+#item3 {
+    background-color: blanchedalmond;
+}
+#item4 {
+    background-color: black;
+}
+#item5 {
+    background-color: greenyellow;
+}
+#item6 {
+    background-color:  burlywood;
+}
+
+

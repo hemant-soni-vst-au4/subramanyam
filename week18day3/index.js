@@ -1,8 +1,9 @@
 function geoFindMe() {
 
     const status = document.querySelector('#status');
-    const mapLink = document.querySelector('#map-link');
     const loc = document.querySelector('#location');
+    const mapLink = document.querySelector('#map-link');
+    
   
     mapLink.href = '';
     mapLink.textContent = '';
