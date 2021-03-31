@@ -29,6 +29,58 @@ class Customer extends ATM {
     }
     verifyPassword = () => console.log('show password')
 }
+class Account extends Bank {
+    constructor(code,address, number, balance){
+        super(code, address);
+        this.balance = balance;
+        this.number = number;
+    }
+    deposit = () => console.log('deposit');
+    withdraw = () => console.log('withdraw')  
+}
+
+class AtmTransaction extends Account {
+    constructor(number, balance, transactionId, date, type, amount, postBalance) {
+        super(number, balance)
+
+        this.transactionId = transactionId;
+        this.date = date
+        this.type = type
+        this.amount = amount
+        this.postBalance = postBalance
+    }
+
+    modifies = () => console.log("Modified");
+}
+
+// class Account extends Customer {
+//     constructor(code, address, number, balance) {
+//         super(code, address);
+
+//         this.number = number
+//         this.balance = balance
+//     }
+
+//     deposit = () => console.log("Deposited")
+//     withdraw = () => console.log("Withdrawn")
+// }
+
+class CheckAccount extends Account {
+    constructor(code, address, number, balance, entry) {
+        super(code, address, number, balance)
+        this.entry = entry
+    }
+
+    markEntry = () => console.log("Entry Marked");
+}
+
+class SavingsAccount extends Account {
+    constructor(code, address, number, balance, entry) {
+        super(code, address, number, balance)
+        this.entry = entry
+    }
+    markEntry = () => console.log("Entry Marked");
+}
 
 const axis = new Bank(1422, "Delhi");
 console.log(axis.getAccounts());
