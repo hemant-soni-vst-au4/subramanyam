@@ -8,6 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -17,18 +18,24 @@
     />
   </head>
   <body>
-    <div class="container m-5">
-      <h1>Random images of dog</h1>
-      <div class="image">
-        <img
-          id="random"
-          width="300"
-          height="200"
+    <div class="container shadow mt-5 p-5">
+      <div class="form-group">
+          <p>Enter two string seperated by comma.</p>
+        <label for="enter"><b>String:</b></label>
+        <input
+          type="text"
+          class="form-control"
+          name="enter"
+          id="enter"
+          aria-describedby="helpId"
+          placeholder="Please Enter the string"
         />
       </div>
-      <button type="button" class="btn btn-primary mt-3">Random image</button>
+      <p class="text-danger" id="error"></p>
+      <button type="button" class="btn btn-primary mb-3" id="submit">Submit</button>
+      <h3>Hamming Distance</h3>
+      <h3 id="output"></h3>
     </div>
-
     <script src="index.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -49,5 +56,3 @@
     ></script>
   </body>
 </html>
-
-
