@@ -17,10 +17,12 @@ const user = [
 
 const PORT = 3000;
 
+
+
 app.get('/userinfo', (req, res) => {
     let username = req.query.username;
     let age = req.query.age;
-    let id = req.query.id;
+    let id = req.query.id;    
   let output = user.filter(data => data.username === username );
   console.log(output)
 })
