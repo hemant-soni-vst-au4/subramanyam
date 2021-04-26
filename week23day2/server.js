@@ -8,6 +8,7 @@ const PORT = 3000;
 app.use(express.urlencoded());
 app.use(express.json());
 app.use(express.static('public'));
+
 app.engine('handlebars', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(__dirname, 'views/layouts')
@@ -22,10 +23,15 @@ app.get('/', (req, res) => {
 app.get('/post/:postId', async(req, res) => {
     const postId = req.params.postId;
     console.log("postId", postId);
-    const postResult = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+    const resultPost = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
     .then((response) => response);
-    console.log("postResult", postResult);
-    res.render('post', { post : postResult });
+    const resultComment = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+    .then((response) => response);
+    console.log("comment", resultComment);
+    res.render('post', { 
+        post : resultPost.data,
+        comment : resultComment
+    });
 })
 
 app.listen(PORT, () => {

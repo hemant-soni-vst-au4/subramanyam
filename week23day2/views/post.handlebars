@@ -1,2 +1,15 @@
-<h1>{{ post.data.id }}</h1>
-<p>{{ post.data.body }}</p>
+<div class="container">
+<h1 class="bg-danger">Title of Post</h1>
+<h3>{{post.title}}</h3>
+<h1>Body of post</h1>
+<h3>{{post.body}}</h3>
+<br>
+
+<h1>Comment on Post</h1>
+{{#each comment.data}}
+<p>{{this.name}}</p>
+<p>{{this.email}}</p>
+<p><b>Comment is:-</b></p>
+<p>{{this.body}}</p>
+{{/each}}
+</div>
